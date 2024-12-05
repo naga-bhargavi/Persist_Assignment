@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Video Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Colorful Video Hub</h1>
+        <button id="darkModeToggle">🌙 Dark Mode</button>
+    </header>
+
+    <main>
+        <section class="cards-section">
+            <h2>About This Website</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>🎥 Extensive Video Collection</h3>
+                    <p>Explore a wide range of videos from various genres, including education, entertainment, and more.</p>
+                </div>
+                <div class="card">
+                    <h3>⭐ User Interaction</h3>
+                    <p>Engage with videos by adding comments and enjoying a seamless playlist experience.</p>
+                </div>
+                <div class="card">
+                    <h3>🌟 Dark Mode</h3>
+                    <p>Switch to dark mode for a comfortable viewing experience, day or night.</p>
+                </div>
+                <div class="card">
+                    <h3>🎧 High-Quality Audio</h3>
+                    <p>Enjoy videos with crisp, high-quality audio for an immersive experience.</p>
+                </div>
+                <div class="card">
+                    <h3>🖥️ Responsive Design</h3>
+                    <p>Access the website seamlessly on any device, from desktops to mobile phones.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="video-container">
+            <video id="mainVideo" controls>
+                <source src="sample.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2 id="videoTitle">Sample Video</h2>
+        </div>
+
+        <div class="playlist">
+            <h2>🎥 Playlist</h2>
+            <ul id="videoList">
+                <li data-src="sample.mp4" data-title="Sample Video">Sample Video</li>
+                <li data-src="sample2.mp4" data-title="Second Video">Second Video</li>
+            </ul>
+        </div>
+
+        <div class="comments-section">
+            <h2>💬 Comments</h2>
+            <ul id="commentsList"></ul>
+            <textarea id="commentInput" placeholder="Add a comment..."></textarea>
+            <button onclick="addComment()">Submit</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My Colorful Video Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
